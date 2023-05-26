@@ -1,0 +1,84 @@
+/* Flexbox for the second section introprhase */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  padding: 5rem 10rem 7rem 10rem;
+}
+.flex-item-left {
+  padding: 10px;
+  flex: 50%;
+  text-align: center;
+}
+.flex-item-right {
+  padding: 10px;
+  flex: 50%;
+}
+.flex-item-right p {
+  margin-top: 36px;
+}
+.flex-item-right button {
+  margin-top: 5rem;
+}
+
+/* Button style introprhase */
+.btn-intro {
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  text-align: left;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 16px;
+  padding: 10px 15px 10px 0px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.btn-intro {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.btn-intro:after {
+  content: url('data:image/svg+xml,<svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1L17 8L10 15M1 8H17H1Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+  position: absolute;
+  opacity: 0;
+  top: 11px;
+  right: -50px;
+  transition: 0.5s;
+}
+.btn-intro:hover {
+  padding-right: 120px;
+  padding-left: 10px;
+}
+.btn-intro:hover:after {
+  opacity: 1;
+  right: 0px;
+}
+
+/* Responsive */
+@media (max-width: 1300px) {
+  .flex-container {
+    padding: 5rem 5rem 5rem 5rem;
+  }
+}
+@media (max-width: 1140px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .flex-item-left {
+    text-align: left;
+  }
+  .flex-item-left svg {
+    width: 187px;
+    height: 265px;
+  }
+}
+@media (max-width: 500px) {
+  .flex-container {
+    padding: 5rem 1rem 5rem 1rem;
+  }
+  .flex-item-right button {
+    margin-top: 2rem;
+  }
+}

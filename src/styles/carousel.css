@@ -1,0 +1,117 @@
+:root {
+  --primary: #6a59ff;
+  --white: #ffffff;
+  --bg: #f5f5f5;
+}
+#carousel {
+  padding: 8rem 0rem 2rem 0rem;
+  text-align: center;
+}
+.container {
+  max-width: 124rem;
+  padding: 4rem 0rem;
+  margin: 0 auto;
+}
+.swiper-slide-active .card-img {
+  background-color: #d6f379;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  border-radius: 2rem;
+}
+.swiper_container {
+  height: 30rem;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.swiper-slide {
+  width: 37rem !important;
+  height: 42rem !important;
+  position: relative !important;
+}
+
+.swiper-slide-active img {
+  width: 32rem !important;
+  height: 15rem !important;
+  position: relative !important;
+}
+.name-album {
+  color: rgba(0, 0, 0, 0.9);
+  text-align: left;
+  margin-left: 6%;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 36px;
+}
+.date-album {
+  color: rgba(0, 0, 0, 0.9);
+  text-align: left;
+  margin-left: 6%;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 16px;
+}
+.info-album {
+  display: none;
+}
+.swiper-slide-active .info-album {
+  display: block;
+}
+@media (max-width: 1140px) {
+  .title-carousel {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  .swiper-slide {
+    width: 30rem !important;
+    height: 35rem !important;
+  }
+  .swiper-slide-active img {
+    width: 28rem !important;
+    height: 13rem !important;
+  }
+}
+@media (max-width: 500px) {
+  .title-carousel {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  .swiper_container {
+    height: 25rem;
+  }
+  .title-carousel {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .swiper-slide {
+    width: 20rem !important;
+    height: 35rem !important;
+  }
+  .swiper-slide-active img {
+    width: 17rem !important;
+    height: 13rem !important;
+  }
+  .name-album {
+    font-size: 24px;
+  }
+  .date-album {
+    font-size: 14px;
+  }
+  #carousel {
+    padding: 8rem 0rem 0rem 0rem;
+    text-align: center;
+  }
+  .container {
+    padding: 4rem 0rem 0rem 0rem;
+  }
+}
+
+.swiper-slide img {
+  width: 20rem;
+  height: 18rem;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}

@@ -1,0 +1,67 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat-Regular.ttf");
+  font-family: Helvetica, sans-serif;
+}
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("./fonts/Montserrat-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("./fonts/Montserrat-Bold.ttf");
+}
+@font-face {
+  font-family: "Helvetica-NL";
+  src: url("./fonts/HelveticaNeue-Light.ttf");
+}
+@font-face {
+  font-family: "Helvetica-NMedium";
+  src: url("./fonts/Helvetica-Neue-Medium.ttf");
+}
+body {
+  background: rgba(0, 0, 0, 0.88);
+}
+div {
+  color: #ffffff;
+}
+#name {
+  font-family: Montserrat;
+  margin-left: 5%;
+}
+.title-mix {
+  font-family: Montserrat-Bold;
+  font-size: 64px;
+  line-height: 78px;
+  margin: 0;
+}
+.title-mix span {
+  color: #d6f379;
+}
+.p-16 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+.ln-32 {
+  line-height: 32px;
+}
+.p-24 {
+  font-family: "HelveticaNMedium", sans-serif;
+  font-size: 24px;
+  line-height: 35px;
+}
+@media (max-width: 500px) {
+  .title-mix {
+    font-size: 40px;
+    line-height: 49px;
+  }
+}
